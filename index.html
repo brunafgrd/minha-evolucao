@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Minha Evolução</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+   <link rel="stylesheet" href="style.css">
+
+   <link rel="manifest" href="manifest.json">
+
+</head>
+
+<body>
+
+<header>
+    <h1 id="boasVindas">Bem-vinda! 👋</h1>
+    <p>Acompanhe sua evolução</p>
+</header>
+
+    <main>
+
+        <section class="resumo">
+    
+    <h2>Meu progresso</h2>
+
+    <div class="cards">
+
+       <div class="card card-principal">
+    <h3>Peso atual</h3>
+
+    <p id="pesoAtual">-- kg</p>
+
+    <span id="resumoPeso">--</span>
+</div>
+
+        <div class="card">
+            <h3>Meta</h3>
+            <p id="metaAtual">-- kg</p>
+        </div>
+
+        <div class="card">
+            <h3>Peso inicial</h3>
+                <p id="pesoInicial">-- kg</p>
+        </div>
+
+    </div>
+
+        </section>
+
+        <section class="progresso">
+            <h2>Progresso</h2>
+        
+
+           <p id="textoProgresso">Seu progresso aparecerá aqui.</p>
+
+            <div class="barra">
+                <div class="barra-preenchida"></div>
+            </div>
+            <p id="pesoPerdido"></p>
+        </section>
+
+       <section class="atalhos">
+
+    <a href="peso.html" class="atalho">
+        <i class="bi bi-plus-circle"></i>
+        <span>Registrar peso</span>
+    </a>
+
+    <div class="atalhos-duplos">
+
+        <a href="medidas.html" class="atalho">
+            <i class="bi bi-rulers"></i>
+            <span>Adicionar medidas</span>
+        </a>
+
+        <a href="fotos.html" class="atalho">
+            <i class="bi bi-camera"></i>
+            <span>Adicionar foto</span>
+        </a>
+
+    </div>
+
+</section>
+    </main>
+
+    <nav class="menu-inferior">
+
+    <a href="index.html" class="ativo">
+        <i class="bi bi-house"></i>
+        <span>Início</span>
+    </a>
+
+    <a href="peso.html">
+        <i class="bi bi-graph-up"></i>
+        <span>Peso</span>
+    </a>
+
+    <a href="medidas.html">
+        <i class="bi bi-rulers"></i>
+        <span>Medidas</span>
+    </a>
+
+    <a href="fotos.html">
+        <i class="bi bi-camera"></i>
+        <span>Fotos</span>
+    </a>
+
+    <a href="perfil.html">
+        <i class="bi bi-person"></i>
+        <span>Perfil</span>
+    </a>
+
+</nav>
+
+    <script src="java.js"></script>
+</body>
+
+</html>

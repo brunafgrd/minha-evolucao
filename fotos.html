@@ -1,0 +1,140 @@
+ <!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fotos - Minha Evolução</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="manifest" href="manifest.json">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Minha evolução</h1>
+
+        <p>Registre sua evolução em fotos</p>
+
+    </header>
+
+
+    <main>
+
+        <section class="fotos-box">
+
+            <h2>Nova foto</h2>
+
+            <label for="foto">
+                Escolha uma foto da sua evolução
+            </label>
+
+            <input
+                type="file"
+                id="foto"
+                accept="image/*"
+            >
+
+            <button id="btnAdicionarFoto">
+                Adicionar foto
+            </button>
+
+        </section>
+
+
+        <section class="fotos-box historico-fotos">
+
+            <h2>Minhas fotos</h2>
+
+            <div id="listaFotos"></div>
+
+        </section>
+        <section class="fotos-box">
+
+    <h2>Comparar evolução</h2>
+
+    <div class="comparacao-fotos">
+
+        <div>
+            <label for="fotoAntes">
+                Antes
+            </label>
+
+            <select id="fotoAntes">
+                <option value="">
+                    Selecione uma foto
+                </option>
+            </select>
+        </div>
+
+        <div>
+            <label for="fotoDepois">
+                Depois
+            </label>
+
+            <select id="fotoDepois">
+                <option value="">
+                    Selecione uma foto
+                </option>
+            </select>
+        </div>
+
+    </div>
+
+    <div id="resultadoComparacao"></div>
+
+</section>
+
+    </main>
+
+
+    <nav class="menu-inferior">
+
+        <a href="index.html">
+            <i class="bi bi-house"></i>
+            <span>Início</span>
+        </a>
+
+        <a href="peso.html">
+            <i class="bi bi-graph-up"></i>
+            <span>Peso</span>
+        </a>
+
+        <a href="medidas.html">
+            <i class="bi bi-rulers"></i>
+            <span>Medidas</span>
+        </a>
+
+        <a href="fotos.html" class="ativo">
+            <i class="bi bi-camera"></i>
+            <span>Fotos</span>
+        </a>
+
+        <a href="perfil.html">
+            <i class="bi bi-person"></i>
+            <span>Perfil</span>
+        </a>
+
+    </nav>
+
+
+    <script src="java.js"></script>
+
+</body>
+
+</html>

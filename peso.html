@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Peso - Minha Evolução</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="manifest" href="manifest.json">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Meu peso</h1>
+
+        <p>Acompanhe seu histórico</p>
+
+    </header>
+
+
+    <main>
+
+        <section class="peso-box">
+
+            <h2>Minha meta</h2>
+
+            <label for="meta">
+                Digite sua meta de peso
+            </label>
+
+            <input 
+                type="number" 
+                id="meta" 
+                placeholder="Ex: 65"
+                step="0.1"
+            >
+
+            <button id="btnMeta">
+                Salvar meta
+            </button>
+
+        </section>
+
+
+        <section class="peso-box">
+
+            <h2>Nova pesagem</h2>
+
+            <label for="peso">
+                Digite seu peso
+            </label>
+
+            <input 
+                type="number" 
+                id="peso" 
+                placeholder="Ex: 72.5"
+                step="0.1"
+            >
+
+            <button id="btnAdicionar">
+                Adicionar peso
+            </button>
+
+        </section>
+
+
+        <section class="peso-box historico">
+
+            <h2>Histórico</h2>
+
+            <div id="listaPesos"></div>
+
+        </section>
+<section class="peso-box">
+
+    <h2>Evolução do peso</h2>
+
+    <div class="grafico-container">
+        <canvas id="graficoPeso"></canvas>
+    </div>
+
+</section>
+    </main>
+
+ <section class="resumo-evolucao">
+
+    <div class="resumo-item">
+
+        <span>Você já perdeu</span>
+
+        <strong id="totalPerdido">-- kg</strong>
+
+    </div>
+
+
+    <div class="resumo-item">
+
+        <span>Falta para a meta</span>
+
+        <strong id="faltaMeta">-- kg</strong>
+
+    </div>
+
+</section>
+
+
+    <nav class="menu-inferior">
+
+        <a href="index.html">
+            <i class="bi bi-house"></i>
+            <span>Início</span>
+        </a>
+
+        <a href="peso.html" class="ativo">
+            <i class="bi bi-graph-up"></i>
+            <span>Peso</span>
+        </a>
+
+        <a href="medidas.html">
+            <i class="bi bi-rulers"></i>
+            <span>Medidas</span>
+        </a>
+
+        <a href="fotos.html">
+            <i class="bi bi-camera"></i>
+            <span>Fotos</span>
+        </a>
+
+        <a href="perfil.html">
+            <i class="bi bi-person"></i>
+            <span>Perfil</span>
+        </a>
+
+    </nav>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="java.js"></script>
+
+</body>
+
+</html>
